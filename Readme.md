@@ -111,9 +111,9 @@ telnet localhost 8081
 ``` bash
 ssh -i "7D2Dkeypair.pem" -L 8081:localhost:8081 ubuntu@your-public-ip-address
 ```
-- start a game with the steam user id which has admin permissions in the serveradmin.xml file, and then use the in-game console to connect to the server. You can open the in-game console by pressing the F1 key while in the game
+- start a game with the steam user id which has admin permissions in the serveradmin.xml file, and open the in-game console by pressing F1 while in the game
 - create a web dashboard user by giving the command "createwebuser" in the console, and follow the provided link with a token to set up a username and password for the web dashboard user
-- The web dashboard is accessible at `http://your-public-ip-address:8080`. You can log in with the username and password you set up for the web dashboard user.
+- The web dashboard is accessible at `http://your-public-ip-address:8080`. You can log in anytime with the username and password you set up for the web dashboard user.
 - You can also set up a reverse proxy to access the web dashboard securely from outside. For example, you can use Nginx as a reverse proxy to forward requests from a domain or subdomain to the web dashboard running on port 8080. Make sure to configure the reverse proxy to use HTTPS for secure access.
 - or again you can use SSH port forwarding to access the web dashboard securely from your local machine. For example:
 ``` bash
@@ -154,4 +154,5 @@ sudo systemctl status 7d2d.service
 - This will ensure that your 7D2D server starts automatically whenever the EC2 instance is rebooted or started.
 
 # Conclusion
+
 - You have successfully set up a 7D2D server on an EC2 instance. You can now manage your server using the web dashboard, in-game console, or Telnet interface. Remember to keep your server updated and secure by regularly applying updates and monitoring for any potential issues. Enjoy playing 7 Days to Die with your friends on your new server!
